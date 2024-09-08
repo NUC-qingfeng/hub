@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"temp_can\startup_stm32f407xx.o"
+"temp_can\main.o"
+"temp_can\gpio.o"
+"temp_can\can.o"
+"temp_can\stm32f4xx_it.o"
+"temp_can\stm32f4xx_hal_msp.o"
+"temp_can\stm32f4xx_hal_can.o"
+"temp_can\stm32f4xx_hal_rcc.o"
+"temp_can\stm32f4xx_hal_rcc_ex.o"
+"temp_can\stm32f4xx_hal_flash.o"
+"temp_can\stm32f4xx_hal_flash_ex.o"
+"temp_can\stm32f4xx_hal_flash_ramfunc.o"
+"temp_can\stm32f4xx_hal_gpio.o"
+"temp_can\stm32f4xx_hal_dma_ex.o"
+"temp_can\stm32f4xx_hal_dma.o"
+"temp_can\stm32f4xx_hal_pwr.o"
+"temp_can\stm32f4xx_hal_pwr_ex.o"
+"temp_can\stm32f4xx_hal_cortex.o"
+"temp_can\stm32f4xx_hal.o"
+"temp_can\stm32f4xx_hal_exti.o"
+"temp_can\stm32f4xx_hal_tim.o"
+"temp_can\stm32f4xx_hal_tim_ex.o"
+"temp_can\system_stm32f4xx.o"
+--strict --scatter "TEMP_can\TEMP_can.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TEMP_can.map" -o TEMP_can\TEMP_can.axf
